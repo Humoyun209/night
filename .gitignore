@@ -1,0 +1,5 @@
+.env
+.python-version
+db.sqlite
+venv
+__pycache__
