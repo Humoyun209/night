@@ -4,5 +4,6 @@ from city_app import views
 
 
 urlpatterns = [
-    path("", views.home_view, name="home"),
+    path("catalog/", views.catalog_view, name="home"),
+    path("", views.choose_city_view, name="city"),
 ]

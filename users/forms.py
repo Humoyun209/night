@@ -15,3 +15,11 @@ class RegisterForm(UserCreationForm):
     class Meta:
         model = User
         fields = ("username", "email", "city", "password1", "password2")
+
+
+class TestForm(forms.Form):
+    name = forms.CharField(label="Имя", min_length=8, required=True)
+    birthday = forms.DateTimeField(
+        label="Время рождения", required=True, widget=forms.DateTimeInput, help_text=""
+    )
+    avatar = forms.FileField(label="Аватар", required=True)

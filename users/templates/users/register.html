@@ -70,7 +70,10 @@
                       <div class="form-outline flex-fill mb-0">
                         {{ form.password2.label_tag }}
                         {{ form.password2|add_class:"form-control" }}
-                        {{ form.password2.errors }}
+                        {% for err in form.password2.errors %}
+                          <li><span class="text-danger">{{ err }}</span></li>
+                        {% endfor %}
+
                       </div>
                     </div>
   

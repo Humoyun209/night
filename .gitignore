@@ -1,5 +1,5 @@
 .env
 .python-version
-db.sqlite
+db.sqlite3
 venv
 __pycache__
