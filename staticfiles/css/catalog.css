@@ -57,24 +57,24 @@ address {
 }
 
 /* Form */
-input, textarea, button, select {
+/* input, textarea, button, select {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
   background-color: transparent;
-}
+} */
 
 input::-ms-clear {
   display: none;
 }
 
-button, input[type=submit] {
+/* button, input[type=submit] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
   background: none;
   cursor: pointer;
-}
+} */
 
 input:focus, input:active,
 button:focus, button:active {
@@ -130,9 +130,19 @@ html, body {
 
 .choose {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  gap: 50px;
+}
+
+.choose-down {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .custom-select {
@@ -348,7 +358,7 @@ html, body {
   right: -40px;
 }
 
-.btn {
+.btn-city {
   min-height: 52px;
   border-radius: 8px;
   border: 1px solid #CDD1C3;
@@ -362,10 +372,9 @@ html, body {
   background-color: #0d0f0d;
   color: #fff;
 }
-.btn:hover {
+.btn-city:hover {
   background-color: #414641;
 }
-
 .banner {
   margin: 50px 0px 0px 0px;
 }
