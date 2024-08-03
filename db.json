@@ -1,0 +1,1620 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-08-01T17:37:32.875Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "sqsqqs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-08-01T17:37:39.639Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "qsqssqqqsqs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-08-01T17:37:48.182Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Скоро я буду в Ташкенте",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-08-02T05:40:20.520Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Скоро я буду в Ташкенте",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-08-02T15:42:16.916Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-08-02T16:03:01.253Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-08-02T16:03:45.649Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-08-02T16:03:50.700Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-08-02T16:06:05.225Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-08-02T16:20:45.167Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Subcontent\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-08-02T16:21:03.785Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-08-02T17:03:12.572Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Est stet amet ipsum stet clita rebum duo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-08-02T17:03:12.577Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Скоро я буду в Ташкенте",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-08-02T17:06:00.584Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "sqsqqs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-08-03T01:47:02.624Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Война",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-08-03T01:47:14.321Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Война",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-08-03T01:47:43.816Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Политика",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-08-03T01:47:56.703Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "islam",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-08-03T01:48:10.484Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Исламисты взяли в заложники двух россиян в Нигере",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-08-03T01:52:13.567Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Прократура",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-08-03T01:53:03.546Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Россия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-08-03T01:55:57.530Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-08-03T01:59:05.961Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Medicine",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-08-03T01:59:38.102Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Вакцина",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-08-03T02:00:32.631Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Медицина",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-08-03T02:00:49.500Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "В России разрабатывают вакцины против агрессивных форм рака",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-08-03T02:02:52.465Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "Европа",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-08-03T02:03:04.441Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "США",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-08-03T02:03:21.322Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Политика",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-08-03T02:04:01.397Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "США и ЕС требуют от Мадуро отставки и мирного перехода власти",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-08-03T02:05:42.841Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "10",
+        "object_repr": "Coca-Cola",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-08-03T02:06:49.010Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Coca-Cola оштрафовали на рекордные $6 млрд за неуплату налогов",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-08-03T02:08:31.557Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Израил",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-08-03T02:09:03.125Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "США направят на Ближний Восток авианосцы для помощи Израилю",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-08-03T03:06:45.069Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Исламисты взяли в заложники двух россиян в Нигере",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-08-03T09:00:04.363Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-08-03T09:00:04.367Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-08-03T09:00:04.369Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-08-03T09:00:04.370Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-08-03T09:11:42.027Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Parent\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-08-03T10:17:42.490Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-08-03T10:17:42.493Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-08-03T10:19:50.317Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "13",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-08-03T10:19:50.319Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "12",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-08-03T10:21:51.668Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-08-03T10:32:27.794Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "19",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-08-03T10:32:27.796Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "18",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-08-03T10:32:27.798Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "17",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-08-03T10:32:27.801Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "16",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-08-03T10:32:27.803Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "15",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-08-03T10:36:02.635Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "25",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-08-03T10:36:02.638Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "24",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-08-03T10:36:02.639Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "23",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-08-03T10:36:02.642Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "22",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-08-03T10:36:02.646Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "21",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-08-03T10:37:11.306Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "28",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-08-03T10:37:11.308Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "27",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-08-03T10:37:11.309Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "26",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-08-03T10:37:11.311Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "20",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-08-03T10:37:11.313Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "14",
+        "object_repr": "Comment by root on Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 6,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add article",
+        "content_type": 7,
+        "codename": "add_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change article",
+        "content_type": 7,
+        "codename": "change_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete article",
+        "content_type": 7,
+        "codename": "delete_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view article",
+        "content_type": 7,
+        "codename": "view_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 8,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 8,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 8,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 8,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add tag",
+        "content_type": 9,
+        "codename": "add_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change tag",
+        "content_type": 9,
+        "codename": "change_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete tag",
+        "content_type": 9,
+        "codename": "delete_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view tag",
+        "content_type": 9,
+        "codename": "view_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add comment",
+        "content_type": 10,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change comment",
+        "content_type": 10,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": 10,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view comment",
+        "content_type": 10,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "users",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "news",
+        "model": "article"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "news",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "news",
+        "model": "tag"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "news",
+        "model": "comment"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2r3d1meh4nv5ftuzlwiycve0fge3h7vm",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGller7-U9JzBWv9wADlSnFSIu0OkFNC-mXkvFmhbW9hGWcKU2ZkBO_1ukdKj9B3kO_XbzNPc12WKfFf4QQe_zrk8L4f7d9BotG_tY6rZeCXIZuNAJijJaq28R-Gc9lYYVQtKRAUgKkZQWVAEaW1FJYG9P8OVNn4:1saCIm:cZ7Ob1YoJ76phwOM7FKms9iipQZT0BeZoooTnLnrfCI",
+        "expire_date": "2024-08-17T10:47:56.290Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8rvvtluaf41j8kohsl2rbkyom32dtr06",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGller7-U9JzBWv9wADlSnFSIu0OkFNC-mXkvFmhbW9hGWcKU2ZkBO_1ukdKj9B3kO_XbzNPc12WKfFf4QQe_zrk8L4f7d9BotG_tY6rZeCXIZuNAJijJaq28R-Gc9lYYVQtKRAUgKkZQWVAEaW1FJYG9P8OVNn4:1sZl8w:6jdw7jTVPpD3zbTcNnRXwt4YDN78Ml17V5KZUKhfYUI",
+        "expire_date": "2024-08-16T05:47:58.585Z"
+    }
+},
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$4Uttgg0Y4ONOvHZDsAkWwg$Ly5HaPC8RM5vmz1h4dfaBNgraTg9hmpln5+Vqg+w51A=",
+        "last_login": "2024-08-03T10:47:56.288Z",
+        "is_superuser": true,
+        "username": "root",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-08-01T17:16:17.475Z",
+        "city": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "news.category",
+    "pk": 2,
+    "fields": {
+        "name": "Война",
+        "slug": "voyna"
+    }
+},
+{
+    "model": "news.category",
+    "pk": 3,
+    "fields": {
+        "name": "Россия",
+        "slug": "rossiya"
+    }
+},
+{
+    "model": "news.category",
+    "pk": 4,
+    "fields": {
+        "name": "Медицина",
+        "slug": "medicine"
+    }
+},
+{
+    "model": "news.category",
+    "pk": 5,
+    "fields": {
+        "name": "Политика",
+        "slug": "politika"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 1,
+    "fields": {
+        "name": "qsqssqqqsqs",
+        "slug": "qsqssqqqsqs"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Война",
+        "slug": "voyna"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 3,
+    "fields": {
+        "name": "Политика",
+        "slug": "politika"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 4,
+    "fields": {
+        "name": "islam",
+        "slug": "islam"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 5,
+    "fields": {
+        "name": "Прократура",
+        "slug": "prokratura"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 6,
+    "fields": {
+        "name": "Medicine",
+        "slug": "medicine"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 7,
+    "fields": {
+        "name": "Вакцина",
+        "slug": "vaksina"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 8,
+    "fields": {
+        "name": "Европа",
+        "slug": "euro"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 9,
+    "fields": {
+        "name": "США",
+        "slug": "usa"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 10,
+    "fields": {
+        "name": "Coca-Cola",
+        "slug": "coca-cola"
+    }
+},
+{
+    "model": "news.tag",
+    "pk": 11,
+    "fields": {
+        "name": "Израил",
+        "slug": "israel"
+    }
+},
+{
+    "model": "news.article",
+    "pk": 3,
+    "fields": {
+        "title": "Исламисты взяли в заложники двух россиян в Нигере",
+        "slug": "islamisty-vzyali-v-zalozhniki-dvuh-rossiyan-v-nigere",
+        "author": 1,
+        "subcontent": "AFP: группировка GSIM заявила о захвате двух россиян в заложники в Нигере",
+        "content": "<p><span style=\"color:#000000;\">Группа поддержки ислама и мусульман (GSIM), связанная с&nbsp;«Аль-Каидой» (организация запрещена в&nbsp;России), обнародовала видеозапись, в&nbsp;которой утверждает, что взяла в&nbsp;заложники двух россиян на&nbsp;юго-западе Нигера в&nbsp;Африке. Об этом сообщает агентство &nbsp;(AFP).</span></p><p><span style=\"color:#000000;\">В публикации отмечается, что на&nbsp;кадрах двое мужчин, назвавшихся гражданами России, заявили, что их похитили в&nbsp;Мбанге.</span></p><p><span style=\"color:#000000;\">Один из&nbsp;заложников назвал себя геологом по&nbsp;имени «Юрит». Он сообщил, что родился в&nbsp;России, но жил на&nbsp;. Второй представился «Грегом» и рассказал, что приехал в&nbsp;Нигер месяц назад для&nbsp;работы на&nbsp;российскую компанию.</span></p><p><span style=\"color:#000000;\">Район Мбанга, расположенный в&nbsp;регионе Тиллабери недалеко от границ &nbsp;и , богат золотыми месторождениями. Он часто становится целью джихадистских группировок, таких как GSIM и «Исламское государство» (организация запрещена в&nbsp;России). В&nbsp;июне 2021&nbsp;года в&nbsp;Мбанге были похищены два гражданина , которые были освобождены лишь через&nbsp;девять месяцев. В&nbsp;феврале 2024&nbsp;года в&nbsp;том же районе были освобождены трое итальянцев, похищенных группировкой GSIM в&nbsp;мае 2022&nbsp;года.</span></p><p><span style=\"color:#000000;\">Ранее журналистка &nbsp;подробности нападения туарегов на&nbsp;колонну ЧВК «Вагнер» в&nbsp;Мали.</span></p>",
+        "published_date": "2024-08-03T01:48:10.481Z",
+        "updated_date": "2024-08-03T03:06:45.067Z",
+        "category": 2,
+        "views": 0,
+        "photo": "news/news1.jpg",
+        "tags": [
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "news.article",
+    "pk": 4,
+    "fields": {
+        "title": "Прокуратура требует изъять имущество замглавы МЧС Краснодарского края",
+        "slug": "prokuratura-trebuet-izyat-imushestvo-zamglavy-mchs-krasnodarskogo-kraya",
+        "author": 1,
+        "subcontent": "ГП просит изъять имущество замглавы МЧС Кубани Симоненко и его семьи",
+        "content": "<p><span style=\"color:#000000;\">Генеральная прокуратура подала иск в&nbsp;краснодарский суд, требуя изъять имущество заместителя начальника ГУ МЧС по&nbsp;Краснодарскому краю Сергея &nbsp;и его семьи. Об этом сообщает &nbsp;со ссылкой на&nbsp;материалы суда.</span></p><p><span style=\"color:#000000;\">Отмечается, что иск подан от имени первого заместителя генерального прокурора </span><a href=\"http://google.com\"><span style=\"color:#000000;\">Анатолия Разинкина</span></a><span style=\"color:#000000;\">. Ответчиком по&nbsp;иску выступают сам Симоненко, его супруга, двое дочерей, зять и отец.</span></p><p><span style=\"color:#000000;\">Источник в&nbsp;правоохранительных органах агентства уточнил, что у&nbsp;него и членов семьи обнаружено имущество, которое не подтверждено легальными доходами.</span></p><p><span style=\"color:#000000;\">«Это же стало основанием представления Генпрокуратуры в&nbsp;адрес руководства МЧС с&nbsp;требованием уволить Симоненко по&nbsp;отрицательным мотивам», — добавил источник.</span></p><p><span style=\"color:#000000;\">О задержании замначальника ГУ МЧС по&nbsp;Краснодарскому краю &nbsp;1&nbsp;августа. Симоненко занимал этот пост с&nbsp;октября 2023&nbsp;года. Получил медаль «За отвагу» и медаль ордена «За заслуги перед&nbsp;Отечеством» II степени.</span></p><p><span style=\"color:#000000;\">Ранее сотрудники МЧС &nbsp;под&nbsp;обстрел в&nbsp;российском регионе.</span></p>",
+        "published_date": "2024-08-03T01:55:57.528Z",
+        "updated_date": "2024-08-03T01:55:57.528Z",
+        "category": 3,
+        "views": 0,
+        "photo": "news/news-2.jpg",
+        "tags": [
+            3,
+            5
+        ]
+    }
+},
+{
+    "model": "news.article",
+    "pk": 5,
+    "fields": {
+        "title": "В России разрабатывают вакцины против агрессивных форм рака",
+        "slug": "v-rossii-razrabatyvayut-vakciny-protiv-agressivnyh-form-raka",
+        "author": 1,
+        "subcontent": "Скворцова: одна из онковакцин может стать доступной для пациентов уже в этом году",
+        "content": "<p><span style=\"color:#000000;\">Глава Федерального медико-биологического агентства () России Вероника &nbsp;заявила, что научные организации ведомства разрабатывают онковакцины от ряда агрессивных опухолей. Об этом сообщает .</span></p><p><span style=\"color:#000000;\">По ее словам, вакцины разрабатываются для&nbsp;терапии колоректального рака, меланомы и глиобластомы, которые являются одними из&nbsp;наиболее агрессивных и быстро развивающихся форм злокачественных новообразований.</span></p><p><span style=\"color:#000000;\">Скворцова подчеркнула, что препарат колоректального рака уже прошла полный цикл доклинических исследований и готов к&nbsp;применению.</span></p><p><span style=\"color:#000000;\">В феврале президент &nbsp;, что российские ученые вплотную подошли к&nbsp;созданию вакцин от рака.</span></p><p><span style=\"color:#000000;\">Также глава государства , что больше половины онкологических заболеваний у&nbsp;граждан России в&nbsp;данное время выявляются на&nbsp;начальной стадии. По&nbsp;его словам, на&nbsp;60% выросли объемы химиотерапии, более чем на&nbsp;25% лучевой терапии, а с&nbsp;2020 года в&nbsp;стране начали проводить протонную терапию.</span></p>",
+        "published_date": "2024-08-03T02:00:49.498Z",
+        "updated_date": "2024-08-03T02:00:49.498Z",
+        "category": 4,
+        "views": 0,
+        "photo": "news/news-3.jpg",
+        "tags": [
+            6,
+            7
+        ]
+    }
+},
+{
+    "model": "news.article",
+    "pk": 6,
+    "fields": {
+        "title": "США и ЕС требуют от Мадуро отставки и мирного перехода власти",
+        "slug": "ssha-i-es-trebuyut-ot-maduro-otstavki-i-mirnogo-perehoda-vlasti",
+        "author": 1,
+        "subcontent": "Законодатели США и ЕС пригрозили Мадуро ответственностью за отказ покинуть пост",
+        "content": "<p><span style=\"color:#000000;\">Законодатели &nbsp;и Евросоюза, курирующие вопросы международных отношений, в&nbsp;пятницу обнародовали совместное заявление, в&nbsp;котором пригрозили президенту &nbsp;Николасу &nbsp;«ответственностью», если тот добровольно не откажется от полномочий главы государства после прошедших выборов. Об этом сообщается на&nbsp; Конгресса Соединенных Штатов.</span></p><p><span style=\"color:#000000;\">Законодатели подчеркнули, что правительства стран &nbsp;и США следят за&nbsp;ситуацией в&nbsp;Венесуэле и считают официальные результаты выборов в&nbsp;стране сфабрикованными. В&nbsp;документе утверждается, что Конгресс имеет достаточно доказательств победы оппозиционного кандидата Эдмундо Гонсалеса.</span></p><p><span style=\"color:#000000;\">В заявлении также содержится призыв к&nbsp;Мадуро и Гонсалесу начать переговоры для&nbsp;мирного перехода власти в&nbsp;Венесуэле.</span></p><p><span style=\"color:#000000;\">28 июля в&nbsp;Венесуэле прошли президентские выборы, победу на&nbsp;которых официально одержал Николас Мадуро. На&nbsp;следующий день &nbsp;массовые протесты против результатов выборов, которые привели к&nbsp;столкновениям между&nbsp;полицией и демонстрантами, нападениям на&nbsp;полицейские участки и актам вандализма. Мадуро заявил, что по&nbsp;обвинению в&nbsp;разрушении инфраструктуры и терроризме задержано более 1,2 тыс. человек.</span></p><p><span style=\"color:#000000;\">Ранее в&nbsp;Венесуэле &nbsp;о&nbsp;полном подавлении протестов после выборов.</span></p>",
+        "published_date": "2024-08-03T02:04:01.395Z",
+        "updated_date": "2024-08-03T02:04:01.395Z",
+        "category": 5,
+        "views": 0,
+        "photo": "news/news-4.jpg",
+        "tags": [
+            3,
+            8,
+            9
+        ]
+    }
+},
+{
+    "model": "news.article",
+    "pk": 7,
+    "fields": {
+        "title": "Coca-Cola оштрафовали на рекордные $6 млрд за неуплату налогов",
+        "slug": "coca-cola-oshtrafovali-na-rekordnye-6-mlrd-za-neuplatu-nalogov",
+        "author": 1,
+        "subcontent": "Суд обязал компанию Coca-Cola выплатить рекордный штраф в размере $6 млрд",
+        "content": "<p><span style=\"color:#000000;\">Суд обязал &nbsp;выплатить рекордный штраф в&nbsp;размере $6 млрд — компанию обвиняют в&nbsp;неуплате налогов. Об этом сообщает &nbsp;со ссылкой на&nbsp;пресс-релиз компании.</span></p><p><span style=\"color:#000000;\">«Сегодня Налоговый суд &nbsp;вынес решение по&nbsp;текущему налоговому делу между&nbsp;Coca-Cola Company и Службой внутренних доходов США. Решение включает обязательство в&nbsp;размере около&nbsp;$2,7 млрд. С&nbsp;учетом применимых процентов общая сумма, как ожидается, составит около&nbsp;6 миллиардов долларов», — сообщается в&nbsp;пресс-релизе.</span></p><p><span style=\"color:#000000;\">Данная сумма штрафа, в&nbsp;том случае, если будет выплачена, станет рекордной для&nbsp;американской корпорации. Речь идет об уклонении от уплаты налогов со стороны компании Coca-Cola на&nbsp;протяжении почти десяти лет — следствие считает, что компания перекладывала значительную часть своих доходов на&nbsp;иностранные подразделения, таким образом, уклоняясь от выплаты федеральных налогов.</span></p><p><span style=\"color:#000000;\">Компания намерена подать аппеляцию.</span></p><p><span style=\"color:#000000;\">До этого cуд наложил на&nbsp;TikTok в размере 4&nbsp;млн рублей.</span></p><p><span style=\"color:#000000;\">Ранее бортпроводники на травмы из-за взрывающихся в&nbsp;полете банок Coca-Cola.</span></p>",
+        "published_date": "2024-08-03T02:06:49.006Z",
+        "updated_date": "2024-08-03T02:06:49.006Z",
+        "category": 5,
+        "views": 0,
+        "photo": "news/news-5.jpg",
+        "tags": [
+            10
+        ]
+    }
+},
+{
+    "model": "news.article",
+    "pk": 8,
+    "fields": {
+        "title": "США направят на Ближний Восток авианосцы для помощи Израилю",
+        "slug": "ssha-napravyat-na-blizhnij-vostok-avianoscy-dlya-pomoshi-izrailyu",
+        "author": 1,
+        "subcontent": "Пентагон: США направят на Ближний Восток авианосцы для поддержки Израиля",
+        "content": "<p><span style=\"color:#000000;\">&nbsp;направят на&nbsp;Ближний Восток новую авианосную ударную группу, а также развернут там дополнительные силы противоракетной обороны (ПРО) для&nbsp;усиления защиты американских войск в&nbsp;регионе и . Об этом сообщается в&nbsp;заявлении на&nbsp; Пентагона.</span></p><p><span style=\"color:#000000;\">В тексте отмечается, что глава Пентагона Ллойд Остин приказал заменить авианосную ударную группу USS Abraham Lincoln группой USS Theodore Roosevelt, которая сейчас находится на&nbsp;Ближнем Востоке. Также в&nbsp;зоны ответственности Центрального командования и Европейского командования США направят дополнительные крейсеры и эсминцы. Эти корабли помогут усилить противоракетную оборону. &nbsp;планирует повысить готовность американских войск к&nbsp;развертыванию наземных систем противоракетной обороны.</span></p><p><span style=\"color:#000000;\">Помимо этого, глава Пентагона приказал направить на&nbsp;Ближний Восток еще одну эскадрилью истребителей, чтобы усилить защиту Израиля с&nbsp;помощью авиации, говорится в&nbsp;заявлении. По&nbsp;словам заместителя пресс-секретаря Пентагона , развертывание дополнительных оборонительных мощностей станет ответом на&nbsp;угрозы Израилю со стороны &nbsp;и поддерживаемых &nbsp;группировок.</span></p><p><span style=\"color:#000000;\">Также Остин направил дополнительную эскадрилью истребителей на&nbsp;Ближний Восток для&nbsp;поддержки обороны Израиля. В&nbsp;Средиземном море уже действуют американские подразделения с&nbsp;USS Wasp.</span></p><p><span style=\"color:#000000;\">Ранее Байден &nbsp;Израилю прекращением поддержки США.</span></p>",
+        "published_date": "2024-08-03T02:09:03.123Z",
+        "updated_date": "2024-08-03T02:09:03.123Z",
+        "category": 5,
+        "views": 0,
+        "photo": "news/news-6.jpg",
+        "tags": [
+            2,
+            3,
+            9,
+            11
+        ]
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 5,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": null,
+        "content": "Hello World",
+        "created_date": "2024-08-03T09:00:34.530Z",
+        "updated_date": "2024-08-03T09:00:34.530Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 6,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": null,
+        "content": "Hello World",
+        "created_date": "2024-08-03T09:06:58.146Z",
+        "updated_date": "2024-08-03T09:06:58.146Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 7,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": 6,
+        "content": "Hello word in your self",
+        "created_date": "2024-08-03T09:08:20.824Z",
+        "updated_date": "2024-08-03T09:11:42.026Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 8,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": 6,
+        "content": "Fucking worked",
+        "created_date": "2024-08-03T09:21:27.233Z",
+        "updated_date": "2024-08-03T09:21:27.233Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 29,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": 5,
+        "content": "This is a over comment",
+        "created_date": "2024-08-03T10:37:45.693Z",
+        "updated_date": "2024-08-03T10:37:45.693Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 30,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": 5,
+        "content": "This's fucking head comment",
+        "created_date": "2024-08-03T10:37:58.855Z",
+        "updated_date": "2024-08-03T10:37:58.855Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 31,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": 6,
+        "content": "123",
+        "created_date": "2024-08-03T10:39:25.756Z",
+        "updated_date": "2024-08-03T10:39:25.756Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 32,
+    "fields": {
+        "article": 4,
+        "user": 1,
+        "parent": null,
+        "content": "345",
+        "created_date": "2024-08-03T10:39:29.955Z",
+        "updated_date": "2024-08-03T10:39:29.955Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 33,
+    "fields": {
+        "article": 3,
+        "user": 1,
+        "parent": null,
+        "content": "Assalam aleykum",
+        "created_date": "2024-08-03T13:23:16.346Z",
+        "updated_date": "2024-08-03T13:23:16.347Z"
+    }
+},
+{
+    "model": "news.comment",
+    "pk": 34,
+    "fields": {
+        "article": 3,
+        "user": 1,
+        "parent": 33,
+        "content": "Valeykum Assalam",
+        "created_date": "2024-08-03T13:23:34.934Z",
+        "updated_date": "2024-08-03T13:23:34.934Z"
+    }
+}
+]
