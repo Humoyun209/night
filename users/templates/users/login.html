@@ -61,5 +61,12 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script>
+    const form = document.forms[0]
+    form.onsubmit = (e) => {
+      e.preventDefault()
+      console.log("{{ csrf_token }}")
+    }
+  </script>
 </body>
 </html>

@@ -70,6 +70,10 @@ body {
     background: var(--body-bg);
 }
 
+.ck-content * {
+    color: #000000 !important;
+}
+
 /* LINKS */
 
 a:link, a:visited {

@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %} {% endblock %}</title>
+  {% block bootstrapcss %}
+  {% endblock %}
+  <link href="{% static 'css/catalog.css' %}" rel="stylesheet">
+  <link href="{% static 'js/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+  <link href="{% static 'css/bootstrap-icons/font/bootstrap-icons.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/ckeditor.css' %}">
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+    <script src="{% static 'js/jquery.js' %}"></script>
+    {% block bootstrapjs %}
+    {% endblock %}
+    <script src="{% static 'js/city.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'js/easing/easing.min.js' %}"></script>
+    <script src="{% static 'js/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery_news_main.js' %}"></script>
+</body>
+</html>
+
