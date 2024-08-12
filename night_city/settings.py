@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env("PRODUCTION") == "1"
+DEBUG = env("PRODUCTION") == "0"
 
 ALLOWED_HOSTS = ["vecherniygorod.ru", "www.vecherniygorod.ru", "127.0.0.1", "0.0.0.0"]
 

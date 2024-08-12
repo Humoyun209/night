@@ -8,7 +8,6 @@ register = template.Library()
 
 @register.simple_tag()
 def get_categories():
-    print("Simple tags")
     return (
         Category.objects.values("name")
         .annotate(count=models.Count("articles__id"))

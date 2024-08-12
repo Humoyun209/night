@@ -1,12 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'news/base.html' %}
 {% load static %}
-{% load load_categories %}
+{% load load_last_news %}
 
 {% block title %} {{ post.title }} {% endblock %}
 
-{% block bootstrapcss %}
-<link href="{% static 'css/news.style.min.css' %}" rel="stylesheet"></link>
-{% endblock %}
 
 {% block content %}
     <!-- News With Sidebar Start -->
@@ -63,7 +60,7 @@
                     <!-- Comment Form Start -->
                     <div id="create-comment" class="bg-light mb-3" style="padding: 30px;">
                         <h3 class="mb-4">Leave a comment</h3>
-                        <form>
+                        <form name="comment-form">
                             <input type="hidden" value="{{ request.user.username }}" id="currentUser">
                             <input type="hidden" id="commentId">
                             <div class="form-group">
@@ -116,7 +113,7 @@
                     <!-- Social Follow End -->
 
                     <!-- Newsletter Start -->
-                    <div class="pb-3">
+                    <!-- <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Newsletter</h3>
                         </div>
@@ -130,16 +127,17 @@
                             </div>
                             <small>Sit eirmod nonumy kasd eirmod</small>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Newsletter End -->
 
                     <!-- Ads Start -->
-                    <div class="mb-3 pb-3">
+                    <!-- <div class="mb-3 pb-3">
                         <a href=""><img class="img-fluid" src="img/news-500x280-4.jpg" alt=""></a>
-                    </div>
+                    </div> -->
                     <!-- Ads End -->
 
                     <!-- Popular News Start -->
+                    {% if similar_posts|length > 0 %}
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
                             <h3 class="m-0">Рекомендуем</h3>
@@ -158,7 +156,12 @@
                         </div>
                         {% endfor %}
                     </div>
+                    {% endif %}
                     <!-- Popular News End -->
+
+                    <!-- Last news Start -->
+                    {% load_most_news %}
+                    <!-- Last news End -->
 
                     <!-- Tags Start -->
                     <div class="pb-3">
@@ -178,131 +181,74 @@
     </div>
     </div>
     <!-- News With Sidebar End -->
-
-
-    <!-- Footer Start -->
-    <div class="container bg-light pt-5 px-sm-3 px-md-5">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">Новости</span></h1>
-                </a>
-                <p>Все права защищены. Оставайтесь в курсе событий с нами!</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Категории</h4>
-                <div class="d-flex flex-wrap m-n1">
-                    {% get_categories as categories %}
-                    {% for category in categories %}
-                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">{{ category.name }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Быстрые ссылки</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
-                    <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-            &copy; <a class="font-weight-bold" href="http://vecherniygorod.ru">vecherniygorod.ru</a>. Все права зашишены. 
-        </p>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
-
-    {% endblock %}
-
-{% block bootstrapjs %}
-<script src="{% static 'js/bootstrap-4.bundle.min.js' %}"></script>
-<script>
-    let defaultCommentBlock = "comment-block"
-    function formatDate(isoString) {
-        const date = new Date(isoString);
-        const months = [
-            "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-            "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
-        ];
-        const month = months[date.getMonth()]; // Название месяца
-        const day = String(date.getDate()).padStart(2, '0'); // День с ведущим нулем
-        const year = date.getFullYear(); // Год
-        return `${month} ${day}, ${year}`
-    }
-    
-    function replyComment (e) {
-        const commentId = e.getAttribute("data-comment-id")
-        defaultCommentBlock = `comment-block${commentId}`
-        document.getElementById("commentId").value = commentId
-        window.setTimeout(() => document.getElementById("message").focus(), 20);
-        console.log(defaultCommentBlock)
-    }
-
-    const addComment = (text, cb) => {
-        const parentId = document.getElementById("commentId").value
-        const commentData = {
-            content: text,
-            parent_id: parentId ? parseInt(parentId) : null,
-            article_id: parseInt("{{ post.id }}")
-        }
-        fetch("{% url 'add_comment' %}", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRFToken': '{{ csrf_token }}'
-            },
-            body: JSON.stringify(commentData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            const username = document.getElementById("currentUser").value
-            document.getElementById(defaultCommentBlock).insertAdjacentHTML("beforeend", `<div  class="media ${data.parent ? "mt-4" : "mb-4" }">
-                                <img src="/static/images/profile.png" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                                <div ${!data.parent ? `id="comment-block${ data.id }"` : "" } class="media-body">
-                                    <h6><a href="">${ username }</a>${" "}<small><i>${ formatDate(data.created_date) }</i></small></h6>
-                                    <p>${ data.content }</p>
-                                    ${!data.parent ? `<a href="#create-comment" data-comment-id="${data.id}" onclick="replyComment(this)" class="btn btn-sm btn-outline-secondary">Reply</a>`: ""}
-                                </div>
-                            </div>`)
-            defaultCommentBlock = "comment-block"
-            document.getElementById("commentId").value = ""
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-    }
-    
-    const form = document.forms[0]
-    form.addEventListener("submit", (e) => {
-        e.preventDefault()
-        const content = form.message.value
-        if (!content.length) {
-            alert("Запольните, пожалуйста!")
-        } else {
-            addComment(content)
-            form.reset()
+    <script>
+        let defaultCommentBlock = "comment-block"
+        function formatDate(isoString) {
+            const date = new Date(isoString);
+            const months = [
+                "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+            ];
+            const month = months[date.getMonth()]; // Название месяца
+            const day = String(date.getDate()).padStart(2, '0'); // День с ведущим нулем
+            const year = date.getFullYear(); // Год
+            return `${month} ${day}, ${year}`
         }
         
-    })
-
+        function replyComment (e) {
+            const commentId = e.getAttribute("data-comment-id")
+            defaultCommentBlock = `comment-block${commentId}`
+            document.getElementById("commentId").value = commentId
+            window.setTimeout(() => document.getElementById("message").focus(), 40);
+            console.log(defaultCommentBlock)
+        }
     
-
-    console.log("{{ post.published_date|date:'F d, Y' }}")
-</script>
-{% endblock %}
+        const addComment = (text, cb) => {
+            const parentId = document.getElementById("commentId").value
+            const commentData = {
+                content: text,
+                parent_id: parentId ? parseInt(parentId) : null,
+                article_id: parseInt("{{ post.id }}")
+            }
+            fetch("{% url 'add_comment' %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify(commentData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                const username = document.getElementById("currentUser").value
+                document.getElementById(defaultCommentBlock).insertAdjacentHTML("beforeend", `<div  class="media ${data.parent ? "mt-4" : "mb-4" }">
+                                    <img src="/static/images/profile.png" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                    <div ${!data.parent ? `id="comment-block${ data.id }"` : "" } class="media-body">
+                                        <h6><a href="">${ username }</a>${" "}<small><i>${ formatDate(data.created_date) }</i></small></h6>
+                                        <p>${ data.content }</p>
+                                        ${!data.parent ? `<a href="#create-comment" data-comment-id="${data.id}" onclick="replyComment(this)" class="btn btn-sm btn-outline-secondary">Reply</a>`: ""}
+                                    </div>
+                                </div>`)
+                defaultCommentBlock = "comment-block"
+                document.getElementById("commentId").value = ""
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+        
+        const form = document.forms["comment-form"]
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const content = form.message.value
+            if (!content.length) {
+                alert("Запольните, пожалуйста!")
+            } else {
+                addComment(content)
+                form.reset()
+            }
+            
+        })
+        console.log("{{ post.published_date|date:'F d, Y' }}")
+    </script>
+    {% endblock %}

@@ -14,6 +14,11 @@ class Category(models.Model):
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
+    class Meta:
+        verbose_name = "Категория"
+        verbose_name_plural = "Категории"
+        ordering = ["name"]
+
     def __str__(self):
         return self.name
 
@@ -24,6 +29,11 @@ class Category(models.Model):
 class Tag(models.Model):
     name = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True, blank=True)
+
+    class Meta:
+        verbose_name = "Тег"
+        verbose_name_plural = "Теги"
+        ordering = ["name"]
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -37,12 +47,18 @@ class Tag(models.Model):
         return reverse("tag_detail", args=[self.slug])
 
 
+class ArticleManager(models.Manager):
+    def with_cats(self):
+        return self.select_related("category")
+
+
 class Article(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="articles")
     subcontent = models.CharField(max_length=200)
     content = CKEditor5Field()
+    is_published = models.BooleanField(default=False)
     published_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(
@@ -51,6 +67,17 @@ class Article(models.Model):
     tags = models.ManyToManyField(Tag, related_name="articles")
     views = models.PositiveIntegerField(default=0)
     photo = models.ImageField(upload_to="news/", blank=True, null=True)
+    objects = ArticleManager()
+
+    class Meta:
+        verbose_name = "Статья"
+        verbose_name_plural = "Статьи"
+        ordering = ["-published_date"]
+        indexes = [
+            models.Index(
+                fields=["title", "subcontent", "content"], name="search_index"
+            ),
+        ]
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -79,6 +106,11 @@ class Comment(models.Model):
     content = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "Комментарий"
+        verbose_name_plural = "Комментарии"
+        ordering = ["-created_date"]
 
     def __str__(self):
         return f"Comment by {self.user.username} on {self.article.title}"

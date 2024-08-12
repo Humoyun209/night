@@ -1,14 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'news/base.html' %}
 {% load static %}
-{% load load_categories %}
+{% load load_last_news %}
 {% block title %} News Page {% endblock %}
 
-{% block bootstrapcss %}
-<link href="{% static 'css/news.style.min.css' %}" rel="stylesheet"></link>
-{% endblock %}
-
 {% block content %}
-    
     <!-- Main News Slider Start -->
     <div class="container-fluid py-3">
         <div class="container">
@@ -20,7 +15,7 @@
                             <img class="img-fluid h-100" src="{{ article.photo.url }}" style="object-fit: cover;">
                             <div class="overlay">
                                 <div class="mb-1">
-                                    <a class="text-white" href="">{{ article.category.name }}</a>
+                                    <a class="text-white" href="{% url "category_detail" article.category.slug %}">{{ article.category.name }}</a>
                                     <span class="px-2 text-white">/</span>
                                     <a class="text-white" href="">{{ article.published_date|date:"d/m/Y" }}</a>
                                 </div>
@@ -48,7 +43,7 @@
                     <img class="img-fluid w-100 h-100" src="{{ article.photo.url }}" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-1" style="font-size: 13px;">
-                            <a class="text-white" href="">{{ article.category.name }}</a>
+                            <a class="text-white" href="{% url "category_detail" article.category.slug %}">{{ article.category.name }}</a>
                             <span class="px-1 text-white">/</span>
                             <a class="text-white" href="">{{ article.published_date|date:"F d, Y" }}</a>
                         </div>
@@ -78,7 +73,7 @@
                                 <img class="img-fluid w-100" src="{{ most_viewed_first.photo.url }}" style="object-fit: cover; height: 200px">
                                 <div class="overlay position-relative bg-light">
                                     <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">{{ most_viewed_first.category.name }}</a>
+                                        <a href="{% url "category_detail" most_viewed_first.category.slug %}">{{ most_viewed_first.category.name }}</a>
                                         <span class="px-1">/</span>
                                         <span>{{ most_viewed_first.published_date|date:"F d, Y" }}</span>
                                     </div>
@@ -91,7 +86,7 @@
                                 <img src="{{ article.photo.url }}" style="width: 100px; height: 100px; object-fit: cover;">
                                 <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
                                     <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">{{ article.category.name }}</a>
+                                        <a href="{% url "category_detail" article.category.slug %}">{{ article.category.name }}</a>
                                         <span class="px-1">/</span>
                                         <span>{{ article.published_date|date:"F d, Y" }}</span>
                                     </div>
@@ -106,7 +101,7 @@
                                 <img class="img-fluid w-100" src="{{ most_viewed_second.photo.url }}" style="object-fit: cover; height: 200px">
                                 <div class="overlay position-relative bg-light">
                                     <div class="mb-2" style="font-size: 14px;">
-                                        <a href="">{{ most_viewed_second.category.name }}</a>
+                                        <a href="{% url "category_detail" most_viewed_second.category.slug %}">{{ most_viewed_second.category.name }}</a>
                                         <span class="px-1">/</span>
                                         <span>{{ most_viewed_second.published_date|date:"F d, Y" }}</span>
                                     </div>
@@ -119,7 +114,7 @@
                                 <img src="{{ article.photo.url }}" style="width: 100px; height: 100px; object-fit: cover;">
                                 <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
                                     <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">{{ article.category.name }}</a>
+                                        <a href="{% url "category_detail" article.category.slug %}">{{ article.category.name }}</a>
                                         <span class="px-1">/</span>
                                         <span>{{ article.published_date|date:"F d, Y" }}</span>
                                     </div>
@@ -193,27 +188,10 @@
                     </div> -->
                     <!-- Ads End -->
 
-                    <!-- Popular News Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Последние</h3>
-                        </div>
-                        {% for article in most_last_posts %}
-                            <div class="d-flex mb-3">
-                                <img src="{{ article.photo.url }}" style="width: 100px; height: 100px; object-fit: cover;">
-                                <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 100px;">
-                                    <div class="mb-1" style="font-size: 13px;">
-                                        <a href="">{{ article.category.name }}</a>
-                                        <span class="px-1">/</span>
-                                        <span>{{ article.published_date|date:"F d, Y" }}</span>
-                                    </div>
-                                    <a class="h6 m-0" href="{{ article.get_absolute_url }}">{{ article.title|truncatechars:40 }}</a>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                    <!-- Popular News End -->
-
+                    <!-- Last News Start -->
+                    {% load_most_news %}
+                    <!-- Last News End -->
+                    
                     <!-- Tags Start -->
                     <div class="pb-3">
                         <div class="bg-light py-2 px-4 mb-3">
@@ -234,57 +212,9 @@
     <!-- News With Sidebar End -->
 
 
-    <!-- Footer Start -->
-    <div class="container bg-light pt-5 px-sm-3 px-md-5">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">Новости</span></h1>
-                </a>
-                <p>Все права защищены. Оставайтесь в курсе событий с нами!</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Категории</h4>
-                <div class="d-flex flex-wrap m-n1">
-                    {% get_categories as categories %}
-                    {% for category in categories %}
-                        <a href="#" class="btn btn-sm btn-outline-secondary m-1">{{ category.name }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="font-weight-bold mb-4">Быстрые ссылки</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy & policy</a>
-                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms & conditions</a>
-                    <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-            &copy; <a class="font-weight-bold" href="http://vecherniygorod.ru">vecherniygorod.ru</a>. Все права зашишены. 
-        </p>
-    </div>
-    <!-- Footer End -->
-
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-{% endblock %}
-{% block bootstrapjs %}
-<script src="{% static 'js/bootstrap-4.bundle.min.js' %}"></script>
 {% endblock %}
 

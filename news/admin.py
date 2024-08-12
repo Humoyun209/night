@@ -2,11 +2,11 @@ from django.contrib import admin
 from django.utils.text import slugify
 
 from news.models import Article, Category, Comment, Tag
-from .forms import NewsForm
+from .forms import NewsAdminForm
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    form = NewsForm
+    form = NewsAdminForm
     list_display = (
         "title",
         "author",
