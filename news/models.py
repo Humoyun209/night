@@ -4,6 +4,8 @@ from users.models import User
 from django.utils.text import slugify
 from django.urls import reverse
 
+#    from django.db.backends.mysql.indexes import FullTextIndex
+
 
 class Category(models.Model):
     name = models.CharField(max_length=200, unique=True)
@@ -73,11 +75,6 @@ class Article(models.Model):
         verbose_name = "Статья"
         verbose_name_plural = "Статьи"
         ordering = ["-published_date"]
-        indexes = [
-            models.Index(
-                fields=["title", "subcontent", "content"], name="search_index"
-            ),
-        ]
 
     def save(self, *args, **kwargs):
         if not self.slug:
