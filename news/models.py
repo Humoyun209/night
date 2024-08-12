@@ -57,7 +57,7 @@ class Article(models.Model):
     slug = models.SlugField(max_length=200, unique=True, blank=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="articles")
     subcontent = models.CharField(max_length=200)
-    content = CKEditor5Field()
+    content = CKEditor5Field(max_length=5000)
     is_published = models.BooleanField(default=False)
     published_date = models.DateTimeField(auto_now_add=True)
     updated_date = models.DateTimeField(auto_now=True)
