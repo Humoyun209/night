@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вечерний город</title>
     <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
 </head>
 <body>
     
@@ -15,7 +15,7 @@
             <a href="#" class="logo__link">
                 <img src="{% static 'images/glass1.png' %}" alt="glass">
             </a>
-            <div class="choose-down">
+            <div class="choose-down d-flex flex-column gap-3" style="max-width: 400px; width: 100%">
                 <a href="/register/" class="btn btn-outline-primary btn-lg btn-register__index">Регистрация</a>
                 <a href="/login/" class="btn btn-outline-secondary btn-lg btn-login__index">Авторизация</a>
             </div>
@@ -35,7 +35,7 @@
                             <div class="select-item">Москва</div>
                         </div>
                     </div>
-                    <a href="#" data-button="" class="city__button btn-city">Подтвердить</a>
+                    <a href="#" data-button="" class="city__button btn">Подтвердить</a>
                 </div>
             </div>
         </div>

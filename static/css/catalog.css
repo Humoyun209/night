@@ -128,9 +128,16 @@ html, body {
 
 .choose {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.choose-down {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .custom-select {
@@ -360,6 +367,10 @@ html, body {
   color: #fff;
 }
 .btn:hover {
+  background-color: #414641;
+}
+
+.btn:active {
   background-color: #414641;
 }
 
