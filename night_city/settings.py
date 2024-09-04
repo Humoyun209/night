@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "users.apps.UsersConfig",
     "city_app.apps.CityAppConfig",
     "news.apps.NewsConfig",
+    "board.apps.BoardConfig",
     "django_ckeditor_5",
 ]
 
